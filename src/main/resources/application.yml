@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: keycloak-with-spring-example
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${KEYCLOAK_ISSUER_URI:http://localhost:8080/realms/KeycloakRealm}
+
+
+keycloak:
+  base-url: ${KEYCLOAK_BASE_URL:http://localhost:8080}
+  realm: ${KEYCLOAK_REALM:KeycloakRealm}
+  client-id: ${KEYCLOAK_CLIENT_ID:springboot-app-client}
+  client-admin-id: ${KEYCLOAK_CLIENT_ADMIN_ID:springboot-admin-client}
+  admin:
+    username: ${KEYCLOAK_ADMIN_USERNAME:admin}
+    password: ${KEYCLOAK_ADMIN_PASSWORD:admin}
