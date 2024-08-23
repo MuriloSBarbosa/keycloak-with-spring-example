@@ -1,8 +1,8 @@
-# Keycloak with Spring Boot example
+# Keycloak with Spring Boot example 🔐
 
 This example demonstrates how to use ``Keycloak`` with Spring Boot, and ``Spring Security``.
 
-## What is Keycloak?
+## What is Keycloak? 
 
 Keycloak is an open source software product to allow single sign-on with ``Identity Management`` and
 ``Access Management`` aimed at modern applications and services. As of March 2018 this JBoss community
